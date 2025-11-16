@@ -11,5 +11,12 @@ function getClock() {
   clock.innerText = `${hours}:${minutes}:${seconds}:${milliSeconds}`;
 }
 
+function handleRecordClick() {
+  recordArea.innerText = clock.innerText;
+}
+
 getClock();
+
 setInterval(getClock, 10);
+
+recordButton.addEventlistener("click", handleRecordClick);
