@@ -1,10 +1,9 @@
-const images = ["0.jfif", "1.jfif", "2.jfif", "3.jfif"]
-
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const IMAGE_COUNT = 9;
+const randomIndex = Math.floor(Math.random() * IMAGE_COUNT);
 
 const bgImage = document.createElement("img");
-
-bgImage.src = `img/${chosenImage}`;
+bgImage.src = `img/${randomIndex}.jfif`;
 
 
 document.body.appendChild(bgImage);
+
