@@ -19,4 +19,5 @@ getClock();
 
 setInterval(getClock, 10);
 
-recordButton.addEventlistener("click", handleRecordClick);
+recordButton.addEventListener("click", handleRecordClick);
+
